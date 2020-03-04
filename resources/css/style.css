@@ -34,8 +34,9 @@ header {
 }
 
 header img {
-  width: 20%;
-  height: 20%; 
+  width: 15%;
+  height: 15%; 
+  margin-top: 5px;
 }
 
 header nav li {
@@ -43,6 +44,11 @@ header nav li {
   list-style: none;
   margin: 10px 30px 0 30px;
 }
+
+header nav li:hover {
+  transform: scale(1.1);
+}
+
 
 /* Main Layout */
 .container {
@@ -80,6 +86,13 @@ header nav li {
   margin-bottom: 80px;
 }
 
+.form-wrapper #submit:hover {
+  transform: scale(1.1);
+
+}
+
+
+
 /* Features Layout */
 
 .feature-1, .feature-2 , .feature-3 {
@@ -95,7 +108,7 @@ header nav li {
 /* Pricing Section */
 .pricing-wrapper {
   margin: 0 auto;
-  width: 1100px;
+  max-width: 1100px;
   display: flex;
   justify-content: space-around;
   text-align: center;
@@ -107,7 +120,10 @@ header nav li {
   border: 1px solid black;
   margin: 0 10px;
   line-height: 2rem;
+  box-shadow: 0 0 20px #888888; /*update*/
 }
+
+
 
 .pricing-wrapper h4 {
   background-color: #dddddd;
@@ -118,6 +134,7 @@ header nav li {
 .box h5 {
   margin: 20px 0 20px 0;
   font-size: 2rem;
+  font-weight: 800;
 }
 
 .box button {
@@ -128,6 +145,11 @@ header nav li {
   border: none;
   background-color: #ff5350;
   font-size: 1.1rem;
+  text-transform: uppercase; /*update*/
+}
+
+.box button:hover {
+  transform: scale(1.1);
 }
 
 /* Footer Section */
@@ -150,12 +172,24 @@ header nav li {
 
   footer p {
     color: #444444;
+    opacity: 0.7; /*update*/
   }
 
 
-@media only screen and (min-width: 500px) {
+@media only screen and (min-width: 500px {
     body {
       display: flex;
       flex-direction: column;
     }
+  }
+
+@media only screen and (min-width: 800px) {
+  .pricing-wrapper {
+    margin: 0 auto;
+    display: column;
+
+  }
+
+
+
   }
